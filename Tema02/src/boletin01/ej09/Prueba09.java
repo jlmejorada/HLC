@@ -14,7 +14,7 @@ public class Prueba09 {
 	void testResCalc(int num, String resEsperado){
 		String resObtenido = "";
 		
-		resObtenido = Ejercicio09.binario(2);
+		resObtenido = Ejercicio09.binario(num);
 		
 		assertEquals(resEsperado, resObtenido);
 	}
