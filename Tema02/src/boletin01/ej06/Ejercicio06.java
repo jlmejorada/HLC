@@ -2,7 +2,7 @@ package boletin01.ej06;
 
 public class Ejercicio06 {
 
-	public static double ResCalc(int num1, int num2, int opc) {
+	public static double ResCalc(int num1, int num2, int opc) throws Exception {
 		double res=0;
 		
 		switch (opc) {
@@ -19,7 +19,8 @@ public class Ejercicio06 {
 			res=num1/num2;
 		}
 		default ->{
-			res=Integer.MIN_VALUE;
+			throw new Exception("Opción no valida");
+			
 		}
 		}
 		
