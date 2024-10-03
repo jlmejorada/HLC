@@ -10,7 +10,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import boletin01.ej06.Ejercicio06;
 import boletin01.ej08.Ejercicio08;
 
 class Prueba08 {
