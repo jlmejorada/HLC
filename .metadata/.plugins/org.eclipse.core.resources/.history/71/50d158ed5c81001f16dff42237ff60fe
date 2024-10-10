@@ -1,0 +1,19 @@
+package boletin01.ej08;
+
+public class Ejercicio08 {
+	
+	public static int fibonacci(int num) {
+		int res = 0;
+		
+		
+		if (num==1 || num==2) {		
+			
+			res=1;
+			
+		} else {
+			res=(res-1)+(res-2);
+		}
+		
+		return res;
+	}
+}

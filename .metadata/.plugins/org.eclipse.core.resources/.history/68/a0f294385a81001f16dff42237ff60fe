@@ -1,0 +1,9 @@
+package boletin01.ej08;
+
+public class Ejercicio08 {
+	public static int fibonacci(int dia, int mes, int anno) {
+		int termino = 1;
+
+		return termino;
+	}
+}

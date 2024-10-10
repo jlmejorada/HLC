@@ -1,0 +1,16 @@
+package boletin01.ej09;
+
+public class Ejercicio09 {
+
+	public static String binario(int num){
+		String res="";
+		String prov="";
+		int inter=num;
+		while (inter>=2) {
+			res+=inter%2;
+			inter/=2;
+		}
+		res+=inter;
+		return res;
+	}
+}
