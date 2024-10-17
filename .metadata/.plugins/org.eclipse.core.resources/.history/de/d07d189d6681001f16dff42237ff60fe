@@ -1,0 +1,12 @@
+package boletin01.ej10;
+
+public class Ejercicio10 {
+
+	public static boolean palindromo(String palabra){
+		boolean esPalindromo=false;
+		
+		
+		
+		return esPalindromo;
+	}
+}

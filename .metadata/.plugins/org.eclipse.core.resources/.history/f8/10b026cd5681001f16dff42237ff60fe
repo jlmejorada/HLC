@@ -1,0 +1,9 @@
+package boletin01.ej07;
+
+public class Ejercicio07 {
+
+	public static boolean fechaValida(int dia, int mes, int anno) {
+		boolean esValida=false;
+		return esValida;
+	}
+}
