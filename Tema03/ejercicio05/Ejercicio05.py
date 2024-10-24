@@ -1,4 +1,4 @@
-from os.path import split
+
 
 def ascensor(linea):
     #Inicializamos la respuesta a 0
