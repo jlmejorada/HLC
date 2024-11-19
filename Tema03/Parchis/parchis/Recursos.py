@@ -1,4 +1,3 @@
-from os.path import split
 from random import randint
 
 
@@ -80,7 +79,7 @@ class Recursos:
         # endregion
         return linea
 
-    # Avanza la posicion de los jugadores según las 
+    # Avanza la posicion de los jugadores según el turno
     def avanza_Posiciones(self, turno):
         if (turno == 1):
             self.fichaj1 += Recursos.dado1 + Recursos.dado2
@@ -90,3 +89,23 @@ class Recursos:
             self.fichaj2 += Recursos.dado1 + Recursos.dado2
             if (self.fichaj2 > Recursos.TAM_TABLERO):
                 self.fichaj2 = Recursos.TAM_TABLERO - (self.fichaj2 - Recursos.TAM_TABLERO)
+
+    # Si un jugador va por delante de otro, manda un mensaje diciendolo, si no, dice el empate
+    def estado_Carrera(self):
+        res = ""
+        if (self.fichaj1 > self.fichaj2):
+            res = self.nombrej1 + " va ganando la carrera"
+        elif (self.fichaj1 < self.fichaj2):
+            res = self.nombrej2 + " va ganando la carrera"
+        else:
+            res = "La carrera va empatada"
+        return res
+
+    # Si un jugador llega a la meta, se devuelve su nombre, si no, se devuelve cadena vacia
+    def es_Ganador(self):
+        res = ""
+        if (self.fichaj1 == Recursos.TAM_TABLERO):
+            res = self.nombrej1
+        elif (self.fichaj2 == Recursos.TAM_TABLERO):
+            res = self.nombrej2
+        return res
